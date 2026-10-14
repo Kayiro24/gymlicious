@@ -24,7 +24,7 @@ You don't need any keys or secrets to build, run or test. Release signing is onl
 cd mobile
 dart format lib test catalogue integration_test tool
 dart analyze --fatal-infos
-flutter test
+flutter test --exclude-tags golden   # goldens: flutter test --tags golden (Windows)
 ```
 
 If you changed `design-tokens/tokens.json`, run `dart design-tokens/tool/generate_theme.dart` from the repo root. If you changed models or strings, run `dart run build_runner build -d` and `flutter gen-l10n`. If your change alters a screen on purpose, regenerate goldens with `flutter test --update-goldens` and check the images.

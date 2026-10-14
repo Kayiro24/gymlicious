@@ -1,0 +1,5 @@
+# Golden (screenshot) tests compare pixels, which differ slightly between
+# operating systems. They are generated on Windows and checked by the
+# Windows CI job; the Linux jobs run with --exclude-tags golden.
+tags:
+  golden:

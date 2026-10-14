@@ -26,7 +26,6 @@ Exact versions, pinned in `mobile/pubspec.yaml`. Policy: the newest release at l
 | package_info_plus | 10.2.1 | App version in backups and About. |
 | url_launcher | 6.3.2 | Privacy policy and attribution links. |
 | gal | 2.3.3 | Save the wallpaper image to Photos. |
-| flutter_svg | 2.3.0 | Empty-state illustrations. |
 | lucide_icons_flutter | 3.1.20 | Outline icon set. |
 
 ## Dev

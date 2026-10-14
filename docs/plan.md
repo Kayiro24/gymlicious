@@ -28,7 +28,7 @@ gym-tracker/
 │   └── tool/generate_theme.dart          # -> mobile Dart tokens + Kotlin wallpaper palette
 ├── shared-test-vectors/year_dots/layout_test_vectors.json
 ├── mobile/
-│   ├── assets/{fonts/, seed/, quotes/bundled_quotes.json, illustrations/}
+│   ├── assets/{fonts/, seed/, quotes/bundled_quotes.json, brand/}
 │   ├── config/{dev,staging,prod}.json     # --dart-define-from-file
 │   ├── lib/
 │   │   ├── main.dart
