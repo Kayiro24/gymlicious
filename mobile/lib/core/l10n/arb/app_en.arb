@@ -1423,5 +1423,51 @@
   "quoteNew": "New quote",
   "@quoteNew": {
     "description": "Button under the quote that shows another one."
+  },
+  "heightFeetInches": "{feet} ft {inches} in",
+  "@heightFeetInches": {
+    "description": "A height in feet and inches on the height wheel.",
+    "placeholders": {
+      "feet": {
+        "type": "int"
+      },
+      "inches": {
+        "type": "int"
+      }
+    }
+  },
+  "heightCentimetres": "{cm} cm",
+  "@heightCentimetres": {
+    "description": "A height in centimetres on the height wheel.",
+    "placeholders": {
+      "cm": {
+        "type": "int"
+      }
+    }
+  },
+  "heightThatIs": "That's {value}",
+  "@heightThatIs": {
+    "description": "The selected height in the other unit, under the wheel.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "cropTitle": "Move and scale",
+  "@cropTitle": {
+    "description": "Photo crop screen title."
+  },
+  "cropHint": "Drag to move, pinch or use the slider to zoom.",
+  "@cropHint": {
+    "description": "Photo crop screen help."
+  },
+  "cropUse": "Use photo",
+  "@cropUse": {
+    "description": "Confirms the crop."
+  },
+  "cropZoom": "Zoom",
+  "@cropZoom": {
+    "description": "Zoom slider label on the crop screen."
   }
 }

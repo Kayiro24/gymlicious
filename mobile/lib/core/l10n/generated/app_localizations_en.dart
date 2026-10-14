@@ -1895,4 +1895,31 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get quoteNew => 'New quote';
+
+  @override
+  String heightFeetInches(int feet, int inches) {
+    return '$feet ft $inches in';
+  }
+
+  @override
+  String heightCentimetres(int cm) {
+    return '$cm cm';
+  }
+
+  @override
+  String heightThatIs(String value) {
+    return 'That\'s $value';
+  }
+
+  @override
+  String get cropTitle => 'Move and scale';
+
+  @override
+  String get cropHint => 'Drag to move, pinch or use the slider to zoom.';
+
+  @override
+  String get cropUse => 'Use photo';
+
+  @override
+  String get cropZoom => 'Zoom';
 }

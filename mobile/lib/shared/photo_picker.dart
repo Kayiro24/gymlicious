@@ -72,35 +72,116 @@ class PhotoPicker extends StatelessWidget {
     final label = photoBytes == null
         ? l10n.photoPickerAdd
         : l10n.photoPickerChange;
+    final bytes = photoBytes;
     return Semantics(
       button: true,
       label: label,
       child: InkWell(
         onTap: isBusy ? null : () => _showOptions(context),
-        customBorder: const CircleBorder(),
-        child: Stack(
-          children: [
-            AppAvatar(name: name, photoBytes: photoBytes, size: avatarSize),
-            Positioned(
-              right: 0,
-              bottom: 0,
-              child: Container(
-                padding: const EdgeInsets.all(TokenSpace.xs + TokenSpace.xxs),
-                decoration: BoxDecoration(
-                  color: colors.accent,
-                  shape: BoxShape.circle,
-                  border: Border.all(color: colors.background, width: 2),
-                ),
-                child: Icon(
-                  photoBytes == null ? LucideIcons.plus : LucideIcons.pencil,
-                  size: TokenSpace.lg,
-                  color: colors.onAccent,
+        borderRadius: BorderRadius.circular(TokenRadius.card),
+        child: Padding(
+          padding: const EdgeInsets.all(TokenSpace.xs),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Stack(
+                children: [
+                  if (bytes == null)
+                    const _Silhouette(size: avatarSize)
+                  else
+                    AppAvatar(name: name, photoBytes: bytes, size: avatarSize),
+                  Positioned(
+                    right: 0,
+                    bottom: 0,
+                    child: Container(
+                      padding: const EdgeInsets.all(
+                        TokenSpace.xs + TokenSpace.xxs,
+                      ),
+                      decoration: BoxDecoration(
+                        color: colors.accent,
+                        shape: BoxShape.circle,
+                        border: Border.all(color: colors.background, width: 2),
+                      ),
+                      child: Icon(
+                        photoBytes == null
+                            ? LucideIcons.plus
+                            : LucideIcons.pencil,
+                        size: TokenSpace.lg,
+                        color: colors.onAccent,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: TokenSpace.sm),
+              ExcludeSemantics(
+                child: Text(
+                  label,
+                  style: context.textStyles.labelLarge?.copyWith(
+                    color: colors.accent,
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
   }
+}
+
+/// The default "no photo yet" person, so the picker never looks empty.
+class _Silhouette extends StatelessWidget {
+  const new({required this.size});
+
+  final double size;
+
+  @override
+  Widget build(BuildContext context) => SizedBox.square(
+    dimension: size,
+    child: CustomPaint(painter: _SilhouettePainter(context.colors)),
+  );
+}
+
+class _SilhouettePainter extends CustomPainter {
+  new(this.colors);
+
+  final AppColors colors;
+
+  static const _headCentreY = 0.38;
+  static const _headRadius = 0.19;
+  static const _bodyCentreY = 1.0;
+  static const _bodyWidth = 0.78;
+  static const _bodyHeight = 0.62;
+  static const _figureOpacity = 0.45;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final circle = Offset.zero & size;
+    canvas
+      ..save()
+      ..clipPath(Path()..addOval(circle))
+      ..drawRect(circle, Paint()..color = colors.surfaceMuted);
+    final figure = Paint()
+      ..color = colors.textSecondary.withValues(alpha: _figureOpacity);
+    canvas
+      ..drawCircle(
+        Offset(size.width / 2, size.height * _headCentreY),
+        size.width * _headRadius,
+        figure,
+      )
+      ..drawOval(
+        Rect.fromCenter(
+          center: Offset(size.width / 2, size.height * _bodyCentreY),
+          width: size.width * _bodyWidth,
+          height: size.height * _bodyHeight,
+        ),
+        figure,
+      )
+      ..restore();
+  }
+
+  @override
+  bool shouldRepaint(_SilhouettePainter oldDelegate) =>
+      oldDelegate.colors != colors;
 }

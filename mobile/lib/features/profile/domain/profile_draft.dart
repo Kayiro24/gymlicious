@@ -21,4 +21,14 @@ abstract class ProfileDraft with _$ProfileDraft {
     @Default(WeightUnit.kg) WeightUnit weightUnit,
     @Default(HeightUnit.cm) HeightUnit heightUnit,
   }) = _ProfileDraft;
+
+  /// Where a brand-new profile starts: feet and inches, 5 ft 7 in (170 cm).
+  static const starterHeightCm = 170.0;
+
+  static const starter = ProfileDraft(
+    heightCm: '170',
+    heightFeet: '5',
+    heightInches: '7',
+    heightUnit: HeightUnit.ftIn,
+  );
 }

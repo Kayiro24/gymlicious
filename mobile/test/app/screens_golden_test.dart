@@ -87,4 +87,20 @@ void main() {
       });
     }
   }
+
+  for (final (variant, isDark) in [
+    ('phone_light', false),
+    ('phone_dark', true),
+  ]) {
+    testWidgets('welcome $variant', (tester) async {
+      final app = TestApp();
+      await app.pump(tester, hasProfile: false, arrange: isDark ? _dark : null);
+      await _settle(tester);
+      expect(tester.takeException(), isNull);
+      await expectLater(
+        find.byType(GymTrackerApp),
+        matchesGoldenFile('goldens/screens/welcome_$variant.png'),
+      );
+    });
+  }
 }

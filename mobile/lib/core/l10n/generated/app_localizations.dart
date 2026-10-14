@@ -3267,6 +3267,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'New quote'**
   String get quoteNew;
+
+  /// A height in feet and inches on the height wheel.
+  ///
+  /// In en, this message translates to:
+  /// **'{feet} ft {inches} in'**
+  String heightFeetInches(int feet, int inches);
+
+  /// A height in centimetres on the height wheel.
+  ///
+  /// In en, this message translates to:
+  /// **'{cm} cm'**
+  String heightCentimetres(int cm);
+
+  /// The selected height in the other unit, under the wheel.
+  ///
+  /// In en, this message translates to:
+  /// **'That\'s {value}'**
+  String heightThatIs(String value);
+
+  /// Photo crop screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Move and scale'**
+  String get cropTitle;
+
+  /// Photo crop screen help.
+  ///
+  /// In en, this message translates to:
+  /// **'Drag to move, pinch or use the slider to zoom.'**
+  String get cropHint;
+
+  /// Confirms the crop.
+  ///
+  /// In en, this message translates to:
+  /// **'Use photo'**
+  String get cropUse;
+
+  /// Zoom slider label on the crop screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Zoom'**
+  String get cropZoom;
 }
 
 class _AppLocalizationsDelegate

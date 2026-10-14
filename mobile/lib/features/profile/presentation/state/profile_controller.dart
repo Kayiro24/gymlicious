@@ -7,6 +7,7 @@ import 'package:gym_tracker/core/failure/result.dart';
 import 'package:gym_tracker/core/providers.dart';
 import 'package:gym_tracker/features/profile/data/photo_store.dart';
 import 'package:gym_tracker/features/profile/data/profile_repository.dart';
+import 'package:gym_tracker/features/profile/domain/photo_crop.dart';
 import 'package:gym_tracker/features/profile/domain/profile.dart';
 import 'package:gym_tracker/features/profile/domain/profile_rules.dart';
 import 'package:gym_tracker/features/profile/domain/profile_validator.dart';
@@ -72,8 +73,11 @@ class ProfileController extends Notifier<Profile?> {
     return today;
   }
 
-  Future<Result<void>> setPhoto(Uint8List sourceBytes) async {
-    final prepared = await PhotoStore.prepare(sourceBytes);
+  Future<Result<void>> setPhoto(
+    Uint8List sourceBytes, {
+    PhotoCrop? crop,
+  }) async {
+    final prepared = await PhotoStore.prepare(sourceBytes, crop: crop);
     if (prepared == null) {
       return const Err(PlatformFailure('Unreadable image'));
     }

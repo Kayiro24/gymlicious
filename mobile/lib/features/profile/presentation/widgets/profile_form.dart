@@ -52,9 +52,6 @@ class ProfileFormState extends State<ProfileForm> {
   late ProfileDraft _draft = widget.initialDraft;
   late final _name = TextEditingController(text: _draft.name);
   late final _weight = TextEditingController(text: _draft.weight);
-  late final _heightCm = TextEditingController(text: _draft.heightCm);
-  late final _feet = TextEditingController(text: _draft.heightFeet);
-  late final _inches = TextEditingController(text: _draft.heightInches);
   late final _age = TextEditingController(text: _draft.age);
   final Map<ProfileField, GlobalKey<State<StatefulWidget>>> _fieldKeys = {
     for (final field in ProfileField.values) field: GlobalKey(),
@@ -77,14 +74,7 @@ class ProfileFormState extends State<ProfileForm> {
 
   @override
   void dispose() {
-    for (final controller in [
-      _name,
-      _weight,
-      _heightCm,
-      _feet,
-      _inches,
-      _age,
-    ]) {
+    for (final controller in [_name, _weight, _age]) {
       controller.dispose();
     }
     super.dispose();
@@ -95,22 +85,50 @@ class ProfileFormState extends State<ProfileForm> {
     widget.onChanged(_draft);
   }
 
+  @override
+  void initState() {
+    super.initState();
+    // A draft saved before the height wheel may have no height yet; the
+    // wheel always shows one, so the draft must hold it too.
+    if (_centimetresIn(_draft) == null) {
+      _draft = _withHeight(_draft, ProfileDraft.starterHeightCm);
+      WidgetsBinding.instance.addPostFrameCallback(
+        (_) => widget.onChanged(_draft),
+      );
+    }
+  }
+
+  static double? _centimetresIn(ProfileDraft draft) {
+    if (draft.heightUnit == HeightUnit.cm) {
+      return NumberText.parseDecimal(draft.heightCm);
+    }
+    final feet = int.tryParse(draft.heightFeet);
+    return feet == null
+        ? null
+        : UnitConversion.feetInchesToCm(
+            feet,
+            NumberText.parseDecimal(draft.heightInches) ?? 0,
+          );
+  }
+
+  /// Writes [centimetres] in both units, snapped to the wheel's steps.
+  static ProfileDraft _withHeight(ProfileDraft draft, double centimetres) {
+    final totalInches = HeightField.stepOf(HeightUnit.ftIn, centimetres);
+    return draft.copyWith(
+      heightCm: '${HeightField.stepOf(HeightUnit.cm, centimetres)}',
+      heightFeet: '${totalInches ~/ UnitConversion.inchesPerFoot}',
+      heightInches: '${totalInches % UnitConversion.inchesPerFoot}',
+    );
+  }
+
   void _syncText() => _update(
-    (draft) => draft.copyWith(
-      name: _name.text,
-      weight: _weight.text,
-      heightCm: _heightCm.text,
-      heightFeet: _feet.text,
-      heightInches: _inches.text,
-      age: _age.text,
-    ),
+    (draft) =>
+        draft.copyWith(name: _name.text, weight: _weight.text, age: _age.text),
   );
 
-  /// Switching units converts what is already typed, so nothing is lost.
-  void _setImperial({required bool isImperial}) {
-    final weightUnit = isImperial ? WeightUnit.lb : WeightUnit.kg;
-    final heightUnit = isImperial ? HeightUnit.ftIn : HeightUnit.cm;
-    if (weightUnit == _draft.weightUnit) {
+  /// Switching the weight unit converts what is already typed.
+  void _setWeightUnit(WeightUnit unit) {
+    if (unit == _draft.weightUnit) {
       return;
     }
     final weight = NumberText.parseDecimal(_weight.text);
@@ -120,30 +138,18 @@ class ProfileFormState extends State<ProfileForm> {
         _draft.weightUnit,
       );
       _weight.text = NumberText.trimmed(
-        UnitConversion.toDisplayWeight(kilograms, weightUnit),
+        UnitConversion.toDisplayWeight(kilograms, unit),
       );
     }
-    if (heightUnit == HeightUnit.ftIn) {
-      final centimetres = NumberText.parseDecimal(_heightCm.text);
-      if (centimetres != null) {
-        final (:feet, :inches) = UnitConversion.cmToFeetInches(centimetres);
-        _feet.text = '$feet';
-        _inches.text = NumberText.trimmed(inches);
-      }
-    } else {
-      final feet = int.tryParse(_feet.text);
-      if (feet != null) {
-        final inches = NumberText.parseDecimal(_inches.text) ?? 0;
-        _heightCm.text = NumberText.trimmed(
-          UnitConversion.feetInchesToCm(feet, inches),
-          step: 1,
-        );
-      }
-    }
-    _update(
-      (draft) => draft.copyWith(weightUnit: weightUnit, heightUnit: heightUnit),
-    );
+    _update((draft) => draft.copyWith(weightUnit: unit));
     _syncText();
+  }
+
+  void _setHeightUnit(HeightUnit unit) {
+    final centimetres = _centimetresIn(_draft) ?? ProfileDraft.starterHeightCm;
+    _update(
+      (draft) => _withHeight(draft.copyWith(heightUnit: unit), centimetres),
+    );
   }
 
   String? _error(AppLocalizations l10n, ProfileField field) {
@@ -162,7 +168,6 @@ class ProfileFormState extends State<ProfileForm> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final isImperial = _draft.weightUnit == WeightUnit.lb;
     final dateOfBirth = _draft.dateOfBirth;
     final age = dateOfBirth == null || dateOfBirth.isAfter(widget.today)
         ? null
@@ -171,18 +176,6 @@ class ProfileFormState extends State<ProfileForm> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text(l10n.profileUnitsLabel, style: context.textStyles.labelMedium),
-        const SizedBox(height: TokenSpace.sm),
-        AppSegmented<bool>(
-          semanticLabel: l10n.profileUnitsLabel,
-          selected: isImperial,
-          options: [
-            AppSegmentOption(false, l10n.profileUnitsMetric),
-            AppSegmentOption(true, l10n.profileUnitsImperial),
-          ],
-          onChanged: (value) => _setImperial(isImperial: value),
-        ),
-        gap,
         Center(
           child: PhotoPicker(
             name: _draft.name,
@@ -226,11 +219,10 @@ class ProfileFormState extends State<ProfileForm> {
           key: _fieldKeys[ProfileField.height],
           label: l10n.profileHeight,
           unit: _draft.heightUnit,
-          centimetres: _heightCm,
-          feet: _feet,
-          inches: _inches,
+          centimetres: _centimetresIn(_draft) ?? ProfileDraft.starterHeightCm,
           errorText: _error(l10n, ProfileField.height),
-          onChanged: _syncText,
+          onChanged: (centimetres) =>
+              _update((draft) => _withHeight(draft, centimetres)),
         ),
         gap,
         if (_draft.usesAge)
@@ -270,6 +262,32 @@ class ProfileFormState extends State<ProfileForm> {
             onPressed: () =>
                 _update((draft) => draft.copyWith(usesAge: !draft.usesAge)),
           ),
+        ),
+        gap,
+        Text(l10n.profileUnitsLabel, style: context.textStyles.titleMedium),
+        const SizedBox(height: TokenSpace.md),
+        Text(l10n.settingsWeightUnit, style: context.textStyles.labelMedium),
+        const SizedBox(height: TokenSpace.sm),
+        AppSegmented<WeightUnit>(
+          semanticLabel: l10n.settingsWeightUnit,
+          selected: _draft.weightUnit,
+          options: [
+            AppSegmentOption(WeightUnit.kg, l10n.settingsUnitKilograms),
+            AppSegmentOption(WeightUnit.lb, l10n.settingsUnitPounds),
+          ],
+          onChanged: _setWeightUnit,
+        ),
+        const SizedBox(height: TokenSpace.lg),
+        Text(l10n.settingsHeightUnit, style: context.textStyles.labelMedium),
+        const SizedBox(height: TokenSpace.sm),
+        AppSegmented<HeightUnit>(
+          semanticLabel: l10n.settingsHeightUnit,
+          selected: _draft.heightUnit,
+          options: [
+            AppSegmentOption(HeightUnit.ftIn, l10n.settingsUnitFeetInches),
+            AppSegmentOption(HeightUnit.cm, l10n.settingsUnitCentimetres),
+          ],
+          onChanged: _setHeightUnit,
         ),
       ],
     );

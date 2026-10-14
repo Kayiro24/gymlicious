@@ -18,7 +18,7 @@ class GateDraftStore {
     try {
       final text = await files.readString(fileName);
       if (text == null) {
-        return const ProfileDraft();
+        return ProfileDraft.starter;
       }
       final json = JsonCast.object(jsonDecode(text), fileName);
       final dateOfBirth = json['dateOfBirth'] as String?;
@@ -35,10 +35,12 @@ class GateDraftStore {
         age: json['age'] as String? ?? '',
         usesAge: json['usesAge'] as bool? ?? false,
         weightUnit: WeightUnit.fromName(json['weightUnit'] as String?),
-        heightUnit: HeightUnit.fromName(json['heightUnit'] as String?),
+        heightUnit: json['heightUnit'] == null
+            ? ProfileDraft.starter.heightUnit
+            : HeightUnit.fromName(json['heightUnit'] as String?),
       );
     } on Object {
-      return const ProfileDraft();
+      return ProfileDraft.starter;
     }
   }
 
