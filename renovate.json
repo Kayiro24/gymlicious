@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "minimumReleaseAge": "14 days",
+  "rangeStrategy": "pin",
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "matchManagers": ["pub"],
+      "matchUpdateTypes": ["patch"],
+      "groupName": "pub patch updates"
+    },
+    {
+      "matchManagers": ["gradle"],
+      "groupName": "android gradle"
+    }
+  ]
+}

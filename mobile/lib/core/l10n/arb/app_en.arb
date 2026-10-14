@@ -1,0 +1,1427 @@
+{
+  "@@locale": "en",
+  "appTitle": "Gymlicious",
+  "commonRetry": "Retry",
+  "commonCancel": "Cancel",
+  "commonSave": "Save",
+  "commonDone": "Done",
+  "commonDelete": "Delete",
+  "commonUndo": "Undo",
+  "commonEdit": "Edit",
+  "commonClose": "Close",
+  "commonContinue": "Continue",
+  "commonOptional": "Optional",
+  "commonRequired": "Required",
+  "commonLoading": "Loading",
+  "commonBodyweight": "BW",
+  "commonSaveFailed": "Couldn't save your changes",
+  "commonSomethingWentWrong": "Something went wrong. Please try again.",
+  "tabHome": "Home",
+  "tabTrain": "Train",
+  "unitKg": "kg",
+  "unitLb": "lb",
+  "unitCm": "cm",
+  "unitFt": "ft",
+  "unitIn": "in",
+  "weightWithUnit": "{value} {unit}",
+  "@weightWithUnit": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "statLast": "Last",
+  "statMax": "Max",
+  "statNone": "—",
+  "setRowWeight": "Weight",
+  "setRowReps": "Reps",
+  "setRowIncrease": "Increase weight",
+  "setRowDecrease": "Decrease weight",
+  "setRowWarmup": "Warm-up",
+  "setRowMarkDone": "Mark set done",
+  "setRowMarkNotDone": "Mark set not done",
+  "setRowRemove": "Remove set",
+  "setRowLabel": "Set {number}",
+  "@setRowLabel": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "setRowNewMax": "New max",
+  "quoteRefresh": "Show another quote",
+  "quoteLoading": "Loading a new quote",
+  "searchHint": "Search",
+  "searchClear": "Clear search",
+  "filterTitle": "Filter",
+  "filterAll": "All",
+  "confirmDefaultCancel": "Cancel",
+  "errorStateTitle": "Something went wrong",
+  "datePickerChoose": "Choose a date",
+  "photoPickerAdd": "Add photo",
+  "photoPickerChange": "Change photo",
+  "photoPickerRemove": "Remove photo",
+  "photoPickerCamera": "Take a photo",
+  "photoPickerGallery": "Choose from gallery",
+  "photoPickerFailed": "That image couldn't be used. Try another one.",
+  "heightFeet": "Feet",
+  "heightInches": "Inches",
+  "settingsProfileSubtitle": "Name, body details and photo",
+  "settingsUnits": "Units",
+  "settingsWeightUnit": "Weight",
+  "settingsHeightUnit": "Height",
+  "settingsUnitKilograms": "Kilograms (kg)",
+  "settingsUnitPounds": "Pounds (lb)",
+  "settingsUnitCentimetres": "Centimetres",
+  "settingsUnitFeetInches": "Feet and inches",
+  "settingsIncrement": "Weight step",
+  "settingsIncrementHint": "How much the + and − buttons change a set",
+  "settingsAppearance": "Appearance",
+  "settingsThemeSystem": "System",
+  "settingsThemeLight": "Light",
+  "settingsThemeDark": "Dark",
+  "settingsQuotes": "Quotes",
+  "settingsQuoteGym": "Gym",
+  "settingsQuoteAnime": "Anime",
+  "settingsQuoteMix": "Mix",
+  "settingsQuoteOff": "Off",
+  "settingsQuoteHint": "Anime and Mix fetch extra quotes online when you're connected. Nothing about you is sent.",
+  "settingsData": "Your data",
+  "settingsBackup": "Backup & restore",
+  "settingsYearDotsWallpaper": "Year Dots wallpaper",
+  "settingsAboutSection": "About",
+  "settingsAbout": "About Gymlicious",
+  "settingsPrivacy": "Privacy",
+  "settingsLicenses": "Open-source licences",
+  "settingsDangerZone": "Danger zone",
+  "settingsReset": "Reset all data",
+  "settingsResetSubtitle": "Erase everything on this device",
+  "aboutVersion": "Version {version}",
+  "@aboutVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutBody": "A private workout tracker. Your data stays on this device unless you save or share a backup.",
+  "aboutMedical": "Gymlicious is not a medical app and does not give medical advice.",
+  "aboutCredits": "Quote credits",
+  "aboutAnimeChanCredit": "Anime quotes provided by AnimeChan (animechan.io). Quotes belong to their respective owners.",
+  "aboutFontCredit": "Plus Jakarta Sans by Tokotype, under the SIL Open Font License.",
+  "privacyTitle": "Privacy",
+  "privacyNoAccounts": "No accounts. There is no sign-up and no login.",
+  "privacyOnDevice": "Everything you enter stays in a file on this device. We never receive it.",
+  "privacyQuotes": "When quotes are set to Anime or Mix, the app asks AnimeChan for quotes. AnimeChan sees your device's IP address, as any website would. No personal data or identifiers are sent.",
+  "privacyBackups": "Backups are plain JSON files that you save or share yourself. Anyone with the file can read it, so keep it somewhere safe.",
+  "privacyDeviceBackup": "Your phone's own device backup (Android backup or iCloud) may include the app's data. That backup is managed by your phone, not by us.",
+  "privacyAnalytics": "No analytics, no ads and no crash reporting that uploads data.",
+  "profileTitle": "Profile",
+  "profileUnitsLabel": "Units",
+  "profileUnitsMetric": "kg · cm",
+  "profileUnitsImperial": "lb · ft/in",
+  "profileName": "Name",
+  "profileGender": "Gender",
+  "profileGenderMale": "Male",
+  "profileGenderFemale": "Female",
+  "profileGenderOther": "Other",
+  "profileGenderPreferNot": "Prefer not to say",
+  "profileWeight": "Body weight",
+  "profileHeight": "Height",
+  "profileDateOfBirth": "Date of birth",
+  "profileAge": "Age",
+  "profileUseAge": "I'd rather enter my age",
+  "profileUseDateOfBirth": "Enter my date of birth instead",
+  "profileAgeIs": "Age: {age}",
+  "@profileAgeIs": {
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "profileBmi": "Body mass index: {value}",
+  "@profileBmi": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "profileBmiNote": "BMI is a rough guide and doesn't account for muscle.",
+  "profileErrorRequired": "Please fill this in",
+  "profileErrorNameTooLong": "Use 40 characters or fewer",
+  "profileErrorInvalidNumber": "Enter a number",
+  "profileErrorWeightRange": "Enter between {min} and {max} {unit}",
+  "@profileErrorWeightRange": {
+    "placeholders": {
+      "min": {
+        "type": "String"
+      },
+      "max": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "profileErrorHeightRangeCm": "Enter between 90 and 250 cm",
+  "profileErrorHeightRangeImperial": "Enter between 2 ft 11 in and 8 ft 2 in",
+  "profileErrorHeightInches": "Inches must be from 0 to 11.5",
+  "profileErrorFutureDate": "That date is in the future",
+  "profileErrorAgeRange": "You need to be between 13 and 100",
+  "profileSave": "Save changes",
+  "profileSaved": "Profile saved",
+  "profilePhotoFailed": "Couldn't save the photo. Try another one.",
+  "backupTitle": "Backup & restore",
+  "backupLastNever": "Last backup: never",
+  "backupLastAt": "Last backup: {when}",
+  "@backupLastAt": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "backupDaysAgo": "{count, plural, =0{today} =1{yesterday} other{{count} days ago}}",
+  "@backupDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "backupOldWarning": "It's been a while. Save a fresh copy so a lost phone doesn't mean lost progress.",
+  "backupSave": "Save backup to device",
+  "backupShare": "Share backup",
+  "backupWhatsApp": "Send on WhatsApp",
+  "backupWhatsAppTip": "Tip: send it to yourself in WhatsApp to keep a copy.",
+  "backupRestore": "Restore from backup",
+  "backupUndoRestore": "Undo last restore",
+  "backupUndoRestoreHint": "Brings back the data you had just before your last restore.",
+  "backupWorking": "Preparing your backup…",
+  "backupSaved": "Backup saved",
+  "backupShared": "Backup ready to share",
+  "backupFailed": "Couldn't create the backup. Please try again.",
+  "backupCancelled": "Nothing was saved.",
+  "backupWhatsAppMissing": "WhatsApp isn't installed, so here's the share sheet instead.",
+  "backupWhatsAppHelp": "To restore from WhatsApp: download the file in WhatsApp, then pick it here. On iPhone, tap \"Save to Files\" first.",
+  "backupInfoTitle": "Where is my data?",
+  "backupInfoBody": "Everything lives in a file on this phone. If you uninstall the app or lose the phone, your data is gone unless you've saved or shared a backup file. Saving one takes a few seconds.",
+  "backupInfoLink": "What happens if I uninstall?",
+  "backupReminderToggle": "Weekly backup reminder",
+  "backupReminderToggleHint": "A gentle notification once a week.",
+  "backupBannerToggle": "Remind me in the app",
+  "backupNotificationDenied": "Notifications are turned off for Gymlicious in your phone's settings.",
+  "backupNotificationTitle": "Time for a backup?",
+  "backupNotificationBody": "Save or share a copy of your workouts so they're safe.",
+  "backupNotificationChannel": "Backup reminders",
+  "backupBannerText": "Your workouts only live on this phone. Save a backup?",
+  "backupBannerAction": "Back up",
+  "backupBannerDismiss": "Not now",
+  "restoreTitle": "Restore this backup?",
+  "restorePreviewName": "Name",
+  "restorePreviewExercises": "Exercises",
+  "restorePreviewSessions": "Workouts",
+  "restorePreviewDate": "Backed up",
+  "restorePreviewPhoto": "Profile photo",
+  "restorePreviewPhotoYes": "Included",
+  "restorePreviewPhotoNo": "Not included",
+  "restoreWarning": "This replaces everything currently in the app. You can undo it once from Backup & restore.",
+  "restoreConfirm": "Restore",
+  "restoreWorking": "Restoring your data…",
+  "restoreDone": "All restored",
+  "restoreFailed": "Restore didn't finish. Your previous data is still there.",
+  "restoreNotABackup": "This file isn't a Gymlicious backup.",
+  "restoreDamaged": "This backup looks damaged, so it can't be restored.",
+  "restoreNewerApp": "This backup is from a newer version. Please update the app first.",
+  "restoreInvalid": "Some data in this backup isn't readable, so it can't be restored.",
+  "undoRestoreDone": "Your previous data is back",
+  "resetTitle": "Reset all data",
+  "resetIntro": "This erases your profile, exercises, splits, workouts and settings from this phone. It can't be undone.",
+  "resetBackupFirst": "Save a backup first",
+  "resetTypeToConfirm": "Type {word} to confirm",
+  "@resetTypeToConfirm": {
+    "placeholders": {
+      "word": {
+        "type": "String"
+      }
+    }
+  },
+  "resetConfirmWord": "DELETE",
+  "resetButton": "Erase everything",
+  "resetDone": "All data erased",
+  "gateRestore": "Restore from backup",
+  "gateHeading": "Welcome to Gymlicious. Let's get you set up.",
+  "gateSubheading": "Everything you enter stays on this device. No account needed.",
+  "gateContinue": "Continue",
+  "gateFixErrors": "A few details need a look.",
+  "splitStepTitle": "Pick a split",
+  "splitStepSubtitle": "A starting rotation you can edit any time.",
+  "splitStepOwn": "I'll create my own",
+  "splitStepOwnSubtitle": "Start with an empty split",
+  "splitStepDays": "{count, plural, =1{1 day} other{{count} days}}",
+  "@splitStepDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "setUpLater": "Set up later",
+  "weightsStepTitle": "Starting weights",
+  "weightsStepSubtitle": "Optional. Enter your best and most recent weights so your history isn't empty on day one.",
+  "weightsStepMax": "Best",
+  "weightsStepLast": "Last",
+  "weightsStepSave": "Save and finish",
+  "weightsStepInvalid": "Enter a weight, or leave it empty",
+  "muscleChest": "Chest",
+  "muscleBack": "Back",
+  "muscleShoulders": "Shoulders",
+  "muscleBiceps": "Biceps",
+  "muscleTriceps": "Triceps",
+  "muscleForearms": "Forearms",
+  "muscleQuads": "Quads",
+  "muscleHamstrings": "Hamstrings",
+  "muscleGlutes": "Glutes",
+  "muscleCalves": "Calves",
+  "muscleCore": "Core",
+  "muscleFullBody": "Full body",
+  "muscleCardio": "Cardio",
+  "equipmentBarbell": "Barbell",
+  "equipmentDumbbell": "Dumbbell",
+  "equipmentMachine": "Machine",
+  "equipmentCable": "Cable",
+  "equipmentBodyweight": "Bodyweight",
+  "equipmentKettlebell": "Kettlebell",
+  "equipmentBand": "Band",
+  "equipmentOther": "Other",
+  "exercisesTitle": "Exercises",
+  "exercisesSearchHint": "Search exercises",
+  "exercisesFilter": "Filter by muscle",
+  "exercisesShowArchived": "Archived",
+  "exercisesAdd": "Add exercise",
+  "exercisesEmpty": "No exercises match. Try another search or add your own.",
+  "exercisesNoneSelected": "Pick an exercise to see its progress.",
+  "exerciseFormTitle": "New exercise",
+  "exerciseEditTitle": "Edit exercise",
+  "exerciseName": "Name",
+  "exerciseMuscle": "Muscle group",
+  "exerciseEquipment": "Equipment",
+  "exerciseStartingMax": "Starting max",
+  "exerciseStartingMaxHint": "Your best lift before using the app, if you know it.",
+  "exerciseNameTaken": "You already have an exercise with this name",
+  "exerciseNameEmpty": "Give it a name",
+  "exerciseNameTooLong": "Use 60 characters or fewer",
+  "exerciseSave": "Save",
+  "exerciseMaxOn": "Max · {date}",
+  "@exerciseMaxOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "exerciseLastOn": "Last · {date}",
+  "@exerciseLastOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "exerciseFromBaseline": "Starting max",
+  "exerciseProgress": "Progress",
+  "exerciseProgressEmpty": "Log this exercise to see your progress here.",
+  "exerciseChartLabel": "Best weight per session, {count} sessions",
+  "@exerciseChartLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "exerciseHistory": "History",
+  "exerciseHistoryEmpty": "No sessions yet.",
+  "exerciseNotes": "Notes",
+  "exerciseNotesHint": "Cues, seat height, grip…",
+  "exerciseArchive": "Archive exercise",
+  "exerciseDelete": "Delete exercise",
+  "exerciseUnarchive": "Restore exercise",
+  "exerciseArchived": "Archived. It stays in your history.",
+  "exerciseDeleted": "Exercise deleted",
+  "exerciseArchiveQuestion": "Archive this exercise?",
+  "exerciseArchiveExplain": "It has history, so it will be hidden from pickers but kept in your past workouts.",
+  "exerciseDeleteQuestion": "Delete this exercise?",
+  "exerciseDeleteExplain": "It hasn't been logged yet, so it will be removed completely.",
+  "exerciseSetSummary": "{weight} × {reps}",
+  "@exerciseSetSummary": {
+    "placeholders": {
+      "weight": {
+        "type": "String"
+      },
+      "reps": {
+        "type": "String"
+      }
+    }
+  },
+  "exerciseWarmupMark": "warm-up",
+  "exerciseNotFound": "This exercise no longer exists.",
+  "trainTitle": "Train",
+  "trainActiveSplit": "Active split",
+  "trainChooseSplit": "Choose a split",
+  "trainNoSplits": "No splits yet. Create one, or start a freestyle workout.",
+  "trainUpNext": "Up next",
+  "trainRestDay": "Rest day",
+  "trainExerciseCount": "{count, plural, =0{No exercises} =1{1 exercise} other{{count} exercises}}",
+  "@trainExerciseCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "trainFreestyle": "Freestyle workout",
+  "trainFreestyleSubtitle": "Add exercises as you go",
+  "trainSplits": "Your splits",
+  "trainNewSplit": "New split",
+  "trainEditSplit": "Edit",
+  "trainDraftExists": "You have a workout in progress",
+  "trainResume": "Resume workout",
+  "trainDiscard": "Discard",
+  "trainDiscardQuestion": "Discard this workout?",
+  "trainDiscardExplain": "Sets you logged in it will be lost.",
+  "splitEditorNewTitle": "New split",
+  "splitEditorTitle": "Edit split",
+  "splitName": "Split name",
+  "splitDefaultName": "My split",
+  "splitDefaultDay": "Day {number}",
+  "@splitDefaultDay": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "splitDays": "Days",
+  "splitDayName": "Day name",
+  "splitRestDay": "Rest day",
+  "splitAddDay": "Add day",
+  "splitAddExercise": "Add exercise",
+  "splitRemoveDay": "Remove day",
+  "splitRemoveExercise": "Remove {name}",
+  "@splitRemoveExercise": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "splitReorderHint": "Hold and drag to reorder",
+  "splitMakeActive": "Make active",
+  "splitIsActive": "Active",
+  "splitDelete": "Delete split",
+  "splitDeleteQuestion": "Delete this split?",
+  "splitDeleteExplain": "Your past workouts stay in history.",
+  "splitSave": "Save split",
+  "splitNameRequired": "Give the split a name",
+  "pickerTitle": "Add exercise",
+  "pickerNewExercise": "Create a new exercise",
+  "sessionFreestyle": "Freestyle",
+  "sessionElapsed": "{minutes} min",
+  "@sessionElapsed": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "sessionAddSet": "Add set",
+  "sessionAddExercise": "Add exercise",
+  "sessionFinish": "Finish",
+  "sessionDiscard": "Discard workout",
+  "sessionExerciseNote": "Note",
+  "sessionMoveUp": "Move up",
+  "sessionMoveDown": "Move down",
+  "sessionRemoveExercise": "Remove exercise",
+  "sessionEmpty": "Add an exercise to start logging.",
+  "sessionLastMax": "Last {last} · Max {max}",
+  "@sessionLastMax": {
+    "placeholders": {
+      "last": {
+        "type": "String"
+      },
+      "max": {
+        "type": "String"
+      }
+    }
+  },
+  "sessionNewMax": "New max",
+  "sessionSetRemoved": "Set removed",
+  "sessionFinishNothingDone": "Nothing was marked done, so this workout wasn't saved.",
+  "sessionFinishQuestion": "Finish workout?",
+  "sessionFinishUndone": "{count, plural, =1{1 set isn't marked done and won't be saved.} other{{count} sets aren't marked done and won't be saved.}}",
+  "@sessionFinishUndone": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "summaryTitle": "Nice work",
+  "summaryDuration": "Duration",
+  "summaryExercises": "Exercises",
+  "summarySets": "Sets",
+  "summaryNewMaxes": "New maxes",
+  "summaryNoNewMax": "No new maxes this time. Consistency counts.",
+  "summaryDone": "Done",
+  "summaryMinutes": "{count} min",
+  "@summaryMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "sessionNoActive": "There's no workout in progress.",
+  "historyTitle": "History",
+  "historyList": "List",
+  "historyCalendar": "Calendar",
+  "historyEmpty": "No workouts yet. Your finished sessions will show up here.",
+  "historyThisMonth": "{count, plural, =0{No sessions this month} =1{1 session this month} other{{count} sessions this month}}",
+  "@historyThisMonth": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "historyVolume": "Volume: {value}",
+  "@historyVolume": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "historySessionSummary": "{exercises} · {sets}",
+  "@historySessionSummary": {
+    "placeholders": {
+      "exercises": {
+        "type": "String"
+      },
+      "sets": {
+        "type": "String"
+      }
+    }
+  },
+  "historySetCount": "{count, plural, =1{1 set} other{{count} sets}}",
+  "@historySetCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "historyPreviousMonth": "Previous month",
+  "historyNextMonth": "Next month",
+  "historyTrainedDay": "{date}, trained",
+  "@historyTrainedDay": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "historyNoSessionsOnDay": "No workouts on this day.",
+  "historySelectSession": "Pick a workout to see the details.",
+  "sessionDetailTitle": "Workout",
+  "sessionDetailDate": "Date",
+  "sessionDetailEdit": "Edit workout",
+  "sessionDetailDelete": "Delete workout",
+  "sessionDetailDeleteQuestion": "Delete this workout?",
+  "sessionDetailDeleteExplain": "Max and last weights will be recalculated without it.",
+  "sessionDetailDeleted": "Workout deleted",
+  "sessionDetailSaved": "Workout updated",
+  "sessionDetailMissing": "This workout no longer exists.",
+  "sessionEditSave": "Save changes",
+  "homeGreetingMorning": "Good morning, {name}",
+  "@homeGreetingMorning": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "homeGreetingAfternoon": "Good afternoon, {name}",
+  "@homeGreetingAfternoon": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "homeGreetingEvening": "Good evening, {name}",
+  "@homeGreetingEvening": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "homeOpenProfile": "Open profile",
+  "homeResumeTitle": "Workout in progress",
+  "homeResumeSubtitle": "{day} · started {time}",
+  "@homeResumeSubtitle": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "yearTitle": "Year",
+  "yearLayoutContinuous": "Continuous",
+  "yearLayoutMonths": "Months",
+  "yearSummaryLine": "Day {day} of {total} · {left} left · {percent}%",
+  "@yearSummaryLine": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "left": {
+        "type": "int"
+      },
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "yearLeftOnlyLine": "{left} days left",
+  "@yearLeftOnlyLine": {
+    "placeholders": {
+      "left": {
+        "type": "int"
+      }
+    }
+  },
+  "yearDotTooltip": "{date} · Day {day}",
+  "@yearDotTooltip": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "day": {
+        "type": "int"
+      }
+    }
+  },
+  "yearDotDone": "{date}, day {day}, done",
+  "@yearDotDone": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "day": {
+        "type": "int"
+      }
+    }
+  },
+  "yearDotToday": "{date}, day {day}, today",
+  "@yearDotToday": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "day": {
+        "type": "int"
+      }
+    }
+  },
+  "yearDotLeft": "{date}, day {day}, upcoming",
+  "@yearDotLeft": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "day": {
+        "type": "int"
+      }
+    }
+  },
+  "yearGridSummary": "Year progress: day {day} of {total}, {left} days left",
+  "@yearGridSummary": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "left": {
+        "type": "int"
+      }
+    }
+  },
+  "yearWallpaper": "Wallpaper",
+  "wallpaperTitle": "Year Dots wallpaper",
+  "wallpaperLayout": "Layout",
+  "wallpaperColours": "Colours",
+  "wallpaperPresetLight": "Light",
+  "wallpaperPresetDark": "Dark",
+  "wallpaperPresetBlack": "Black",
+  "wallpaperPresetEmber": "Ember",
+  "wallpaperTextLine": "Text",
+  "wallpaperTextLeftAndPercent": "Days left + %",
+  "wallpaperTextLeftOnly": "Days left",
+  "wallpaperTextNone": "None",
+  "wallpaperTopMargin": "Space for the clock: {percent}%",
+  "@wallpaperTopMargin": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "wallpaperPadding": "Side padding: {value}",
+  "@wallpaperPadding": {
+    "placeholders": {
+      "value": {
+        "type": "int"
+      }
+    }
+  },
+  "wallpaperSetLive": "Set as wallpaper",
+  "wallpaperSetLiveHint": "Opens your phone's wallpaper preview. It updates by itself every day.",
+  "wallpaperLiveFailed": "Couldn't open the wallpaper picker. Save an image instead.",
+  "wallpaperSaveImage": "Save wallpaper image",
+  "wallpaperSaveImageHint": "Saves today's picture to Photos. Set it as your wallpaper from there.",
+  "wallpaperIosNote": "iPhones don't allow live wallpapers, so the image shows the day it was made. Save a new one whenever you like.",
+  "wallpaperSamsungNote": "Some phones limit live wallpapers on the lock screen. If yours does, use a saved image there.",
+  "wallpaperSaved": "Saved to Photos",
+  "wallpaperSaveFailed": "Couldn't save the image. Check the app's Photos permission.",
+  "wallpaperWorking": "Drawing your wallpaper…",
+  "recoveryTitle": "We couldn't read your data",
+  "recoveryBody": "Your data file and its automatic copy both appear to be damaged. You can restore from a backup file, or start fresh.",
+  "recoveryRestore": "Restore from backup",
+  "recoveryStartFresh": "Start fresh",
+  "recoveryStartFreshQuestion": "Start fresh?",
+  "recoveryStartFreshExplain": "This permanently erases the damaged data on this device. Restore from a backup first if you have one.",
+  "navigationLabel": "Main navigation",
+  "streakDayLabel": "{count, plural, =1{day streak} other{day streak}}",
+  "@streakDayLabel": {
+    "description": "Label under the big streak number.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streakSemantics": "{count, plural, =0{No streak yet} =1{1-day streak} other{{count}-day streak}}",
+  "@streakSemantics": {
+    "description": "Screen-reader label for the streak number and flame.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streakWeeksOnTrack": "{count, plural, =0{No weeks on track yet} =1{1 week on track} other{{count} weeks on track}}",
+  "@streakWeeksOnTrack": {
+    "description": "Secondary streak number.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streakBest": "Best: {count}",
+  "@streakBest": {
+    "description": "Best streak, in workout days.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weekRingLabel": "{done} of {goal} days",
+  "@weekRingLabel": {
+    "description": "Weekly progress ring caption.",
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "goal": {
+        "type": "int"
+      }
+    }
+  },
+  "stepIndicatorLabel": "Step {current} of {total}",
+  "@stepIndicatorLabel": {
+    "description": "Onboarding step indicator.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "xpLevel": "Level {level}",
+  "@xpLevel": {
+    "description": "Current level on the XP bar.",
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+  "xpToNextLevel": "{xp} XP to level {next}",
+  "@xpToNextLevel": {
+    "description": "XP remaining until the next level.",
+    "placeholders": {
+      "xp": {
+        "type": "int"
+      },
+      "next": {
+        "type": "int"
+      }
+    }
+  },
+  "badgeEarnedOn": "Earned {date}",
+  "@badgeEarnedOn": {
+    "description": "Earned badge date.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "badgeLocked": "Not earned yet",
+  "@badgeLocked": {
+    "description": "Semantics state for a locked badge."
+  },
+  "dayStateDone": "workout done",
+  "@dayStateDone": {
+    "description": "Day state, read after the date by screen readers."
+  },
+  "dayStateNoWorkout": "no workout",
+  "@dayStateNoWorkout": {
+    "description": "Past day without a workout. Never say missed."
+  },
+  "dayStateRest": "rest day",
+  "@dayStateRest": {
+    "description": "Sunday without a workout."
+  },
+  "dayStatePlanned": "planned",
+  "@dayStatePlanned": {
+    "description": "Day with a note but no workout yet."
+  },
+  "dayStateUpcoming": "upcoming",
+  "@dayStateUpcoming": {
+    "description": "Future day with nothing planned."
+  },
+  "dayStateToday": "today",
+  "@dayStateToday": {
+    "description": "Marks today in a day label."
+  },
+  "celebrationContinue": "Tap anywhere to continue",
+  "@celebrationContinue": {
+    "description": "Hint under a celebration card."
+  },
+  "numberChoiceSemantics": "{count, plural, =1{1 day} other{{count} days}}",
+  "@numberChoiceSemantics": {
+    "description": "Screen-reader label for a days-per-week chip.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tabPlan": "Plan",
+  "@tabPlan": {
+    "description": "Bottom navigation: calendar and check-ins."
+  },
+  "tabStats": "Stats",
+  "@tabStats": {
+    "description": "Bottom navigation: statistics."
+  },
+  "tabMe": "Me",
+  "@tabMe": {
+    "description": "Bottom navigation: profile and settings."
+  },
+  "statusMet": "On track: this week's goal is done",
+  "@statusMet": {
+    "description": "Streak status when the weekly goal is reached."
+  },
+  "statusMoreToGo": "{count, plural, =1{1 more to go this week} other{{count} more to go this week}}",
+  "@statusMoreToGo": {
+    "description": "Streak status with days to spare.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "statusLastChanceToday": "Last chance today",
+  "@statusLastChanceToday": {
+    "description": "One workout needed and today is the last day that can count. Gentle, never alarming."
+  },
+  "statusTrainToday": "Train today to stay on track",
+  "@statusTrainToday": {
+    "description": "Every remaining day is needed."
+  },
+  "statusFreshStartToday": "Fresh start today",
+  "@statusFreshStartToday": {
+    "description": "No streak right now. Never say the streak broke."
+  },
+  "statusNewStreak": "New streak: day {count}",
+  "@statusNewStreak": {
+    "description": "A new streak started inside a week that can no longer meet its goal.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todayTitle": "Today",
+  "@todayTitle": {
+    "description": "Today card heading."
+  },
+  "todayQuestion": "Did you work out today?",
+  "@todayQuestion": {
+    "description": "The one daily check-in question."
+  },
+  "todayCheckIn": "I worked out today",
+  "@todayCheckIn": {
+    "description": "Big check-in button."
+  },
+  "todayDone": "Done. Nice work!",
+  "@todayDone": {
+    "description": "Shown after checking in today."
+  },
+  "todayUndo": "Undo",
+  "@todayUndo": {
+    "description": "Unmarks today's check-in."
+  },
+  "todayAddDetails": "Add note or time",
+  "@todayAddDetails": {
+    "description": "Opens the day sheet for today."
+  },
+  "todayStartWorkout": "Start workout: {day}",
+  "@todayStartWorkout": {
+    "description": "Secondary button that opens the logger for the up-next day.",
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "todayRestDay": "Sunday is your rest day. Trained anyway? It counts as a bonus.",
+  "@todayRestDay": {
+    "description": "Today card on a Sunday that is not done."
+  },
+  "todayPlanned": "Planned: {note}",
+  "@todayPlanned": {
+    "description": "Shows today's planned note.",
+    "placeholders": {
+      "note": {
+        "type": "String"
+      }
+    }
+  },
+  "dayLabel": "{date}, {state}",
+  "@dayLabel": {
+    "description": "Screen-reader label for a calendar day.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "state": {
+        "type": "String"
+      }
+    }
+  },
+  "daySheetDone": "Worked out",
+  "@daySheetDone": {
+    "description": "Done switch in the day sheet."
+  },
+  "daySheetDoneHint": "Turn on if you trained this day",
+  "@daySheetDoneHint": {
+    "description": "Under the Done switch."
+  },
+  "daySheetFutureHint": "You can tick this off on the day.",
+  "@daySheetFutureHint": {
+    "description": "Future days can only be planned."
+  },
+  "daySheetNote": "Note",
+  "@daySheetNote": {
+    "description": "Description field label."
+  },
+  "daySheetNoteHint": "e.g. Chest + triceps",
+  "@daySheetNoteHint": {
+    "description": "Description field hint."
+  },
+  "daySheetTime": "Time",
+  "@daySheetTime": {
+    "description": "Time row label."
+  },
+  "daySheetPlannedTime": "Planned time",
+  "@daySheetPlannedTime": {
+    "description": "Time row label for future days."
+  },
+  "daySheetAddTime": "Add time",
+  "@daySheetAddTime": {
+    "description": "Button when no time is set."
+  },
+  "daySheetClearTime": "Clear time",
+  "@daySheetClearTime": {
+    "description": "Removes the time."
+  },
+  "daySheetDuration": "Duration",
+  "@daySheetDuration": {
+    "description": "Duration chips label."
+  },
+  "daySheetMinutes": "{minutes} min",
+  "@daySheetMinutes": {
+    "description": "A duration in minutes.",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "daySheetNoDuration": "None",
+  "@daySheetNoDuration": {
+    "description": "Duration chip for no duration."
+  },
+  "daySheetSessionLogged": "Workout logged at {time}",
+  "@daySheetSessionLogged": {
+    "description": "When a gym session exists for the day.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "daySheetViewWorkout": "View workout",
+  "@daySheetViewWorkout": {
+    "description": "Opens the session from the day sheet."
+  },
+  "daySheetSave": "Save",
+  "@daySheetSave": {
+    "description": "Saves the day sheet."
+  },
+  "planTitle": "Plan",
+  "@planTitle": {
+    "description": "Plan screen title."
+  },
+  "planPreviousWeek": "Previous week",
+  "@planPreviousWeek": {
+    "description": "Week strip navigation."
+  },
+  "planNextWeek": "Next week",
+  "@planNextWeek": {
+    "description": "Week strip navigation."
+  },
+  "planPreviousMonth": "Previous month",
+  "@planPreviousMonth": {
+    "description": "Month navigation."
+  },
+  "planNextMonth": "Next month",
+  "@planNextMonth": {
+    "description": "Month navigation."
+  },
+  "planThisWeek": "This week",
+  "@planThisWeek": {
+    "description": "Returns the week strip to today."
+  },
+  "planLegendDone": "Done",
+  "@planLegendDone": {
+    "description": "Calendar legend."
+  },
+  "planLegendNoWorkout": "No workout",
+  "@planLegendNoWorkout": {
+    "description": "Calendar legend. Never 'missed'."
+  },
+  "planLegendRest": "Rest day",
+  "@planLegendRest": {
+    "description": "Calendar legend."
+  },
+  "planLegendPlanned": "Planned",
+  "@planLegendPlanned": {
+    "description": "Calendar legend."
+  },
+  "planLegendUpcoming": "Upcoming",
+  "@planLegendUpcoming": {
+    "description": "Calendar legend."
+  },
+  "planHint": "Tap any day to tick it off or plan it.",
+  "@planHint": {
+    "description": "Friendly hint on the Plan screen."
+  },
+  "homeNextBadge": "Next badge",
+  "@homeNextBadge": {
+    "description": "Home teaser heading."
+  },
+  "homeAllBadges": "Every badge earned. Legendary!",
+  "@homeAllBadges": {
+    "description": "Teaser when nothing is left to earn."
+  },
+  "statsTitle": "Stats",
+  "@statsTitle": {
+    "description": "Stats screen title."
+  },
+  "statsCurrentStreak": "Current streak",
+  "@statsCurrentStreak": {
+    "description": "Stat tile."
+  },
+  "statsBestStreak": "Best streak",
+  "@statsBestStreak": {
+    "description": "Stat tile."
+  },
+  "statsTotalWorkouts": "Total workouts",
+  "@statsTotalWorkouts": {
+    "description": "Stat tile."
+  },
+  "statsWeeksOnTrack": "Weeks on track",
+  "@statsWeeksOnTrack": {
+    "description": "Stat tile."
+  },
+  "statsThisWeek": "This week",
+  "@statsThisWeek": {
+    "description": "Stat tile label."
+  },
+  "statsThisMonth": "This month",
+  "@statsThisMonth": {
+    "description": "Stat tile label and heatmap heading."
+  },
+  "statsWorkoutCount": "{count, plural, =1{1 workout} other{{count} workouts}}",
+  "@statsWorkoutCount": {
+    "description": "Workout count.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "statsConsistency": "Consistency",
+  "@statsConsistency": {
+    "description": "Stat tile."
+  },
+  "statsConsistencyHelp": "{count, plural, =1{Your last week, measured against your goal.} other{Weeks that met your goal, out of your last {count}.}}",
+  "@statsConsistencyHelp": {
+    "description": "Explains the consistency percentage.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "statsLastWeeks": "Last 8 weeks",
+  "@statsLastWeeks": {
+    "description": "Weekly bar chart heading."
+  },
+  "statsLastWeeksHelp": "Workouts each week. The line is your goal.",
+  "@statsLastWeeksHelp": {
+    "description": "Weekly bar chart help."
+  },
+  "statsTimeOfDay": "When you train",
+  "@statsTimeOfDay": {
+    "description": "Time-of-day chart heading."
+  },
+  "statsTimeOfDayEmpty": "Add a time to your check-ins to see when you usually train.",
+  "@statsTimeOfDayEmpty": {
+    "description": "Empty state for the time-of-day chart."
+  },
+  "statsMorning": "Morning",
+  "@statsMorning": {
+    "description": "Before 12:00."
+  },
+  "statsAfternoon": "Afternoon",
+  "@statsAfternoon": {
+    "description": "12:00 to 17:00."
+  },
+  "statsEvening": "Evening",
+  "@statsEvening": {
+    "description": "17:00 to 21:00."
+  },
+  "statsNight": "Night",
+  "@statsNight": {
+    "description": "After 21:00."
+  },
+  "statsTypicalTime": "Usually: {period}",
+  "@statsTypicalTime": {
+    "description": "Most common time of day.",
+    "placeholders": {
+      "period": {
+        "type": "String"
+      }
+    }
+  },
+  "statsEmpty": "Your stats grow with every workout. Tick off today to start.",
+  "@statsEmpty": {
+    "description": "Stats screen empty state."
+  },
+  "statsBadges": "Badges",
+  "@statsBadges": {
+    "description": "Badges section heading."
+  },
+  "statsSeeAllBadges": "See all badges",
+  "@statsSeeAllBadges": {
+    "description": "Opens the badges screen."
+  },
+  "statsYourYear": "Your year",
+  "@statsYourYear": {
+    "description": "Year Dots entry card title."
+  },
+  "statsYourYearHelp": "The whole year, one dot per day.",
+  "@statsYourYearHelp": {
+    "description": "Year Dots entry card subtitle."
+  },
+  "statsPersonalRecords": "Personal records",
+  "@statsPersonalRecords": {
+    "description": "Stat tile."
+  },
+  "badgeFirstWorkout": "First workout",
+  "@badgeFirstWorkout": {
+    "description": "Badge title."
+  },
+  "badgeStreak": "{count}-day streak",
+  "@badgeStreak": {
+    "description": "Badge title.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "badgeFirstPr": "First personal record",
+  "@badgeFirstPr": {
+    "description": "Badge title."
+  },
+  "badgeFirstFullWeek": "First full week",
+  "@badgeFirstFullWeek": {
+    "description": "Badge title: first week that met its goal."
+  },
+  "badgeWorkouts": "{count} workouts",
+  "@badgeWorkouts": {
+    "description": "Badge title.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "badgeProgress": "{current} of {total}",
+  "@badgeProgress": {
+    "description": "Locked badge progress.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "badgeNextWorkouts": "{count, plural, =1{1 more workout to earn {badge}} other{{count} more workouts to earn {badge}}}",
+  "@badgeNextWorkouts": {
+    "description": "Next badge teaser.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "badge": {
+        "type": "String"
+      }
+    }
+  },
+  "badgeNextStreak": "{count, plural, =1{1 more streak day to earn {badge}} other{{count} more streak days to earn {badge}}}",
+  "@badgeNextStreak": {
+    "description": "Next badge teaser.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "badge": {
+        "type": "String"
+      }
+    }
+  },
+  "badgeNextPr": "Beat one of your best lifts to earn {badge}",
+  "@badgeNextPr": {
+    "description": "Next badge teaser.",
+    "placeholders": {
+      "badge": {
+        "type": "String"
+      }
+    }
+  },
+  "badgeNextWeek": "Meet your weekly goal to earn {badge}",
+  "@badgeNextWeek": {
+    "description": "Next badge teaser.",
+    "placeholders": {
+      "badge": {
+        "type": "String"
+      }
+    }
+  },
+  "badgesTitle": "Badges",
+  "@badgesTitle": {
+    "description": "Badges screen title."
+  },
+  "celebrateCheckIn": "Day {count}!",
+  "@celebrateCheckIn": {
+    "description": "Celebration after checking in today.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "celebrateLevelUp": "Level {level}!",
+  "@celebrateLevelUp": {
+    "description": "Level-up celebration.",
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+  "celebrateLevelUpMessage": "You're getting stronger.",
+  "@celebrateLevelUpMessage": {
+    "description": "Level-up message."
+  },
+  "celebrateBadge": "Badge earned: {badge}",
+  "@celebrateBadge": {
+    "description": "Badge celebration.",
+    "placeholders": {
+      "badge": {
+        "type": "String"
+      }
+    }
+  },
+  "celebratePr": "New personal record!",
+  "@celebratePr": {
+    "description": "PR celebration."
+  },
+  "celebratePrMessage": "That's a new best. Well done.",
+  "@celebratePrMessage": {
+    "description": "PR message."
+  },
+  "celebrateWeekGoal": "Week goal met!",
+  "@celebrateWeekGoal": {
+    "description": "Weekly goal celebration."
+  },
+  "goalStepTitle": "How many days a week do you want to train?",
+  "@goalStepTitle": {
+    "description": "Onboarding weekly goal step."
+  },
+  "goalStepBody": "Pick a goal you can keep. Sunday is your rest day, and a Sunday workout counts as a bonus.",
+  "@goalStepBody": {
+    "description": "Onboarding weekly goal explanation."
+  },
+  "goalDaysPerWeek": "{count, plural, =1{1 day a week} other{{count} days a week}}",
+  "@goalDaysPerWeek": {
+    "description": "Goal summary.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "allSetTitle": "You're all set, {name}!",
+  "@allSetTitle": {
+    "description": "Final onboarding celebration.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "allSetBody": "Tick off each workout and watch your streak grow.",
+  "@allSetBody": {
+    "description": "Final onboarding message."
+  },
+  "allSetGo": "Let's go",
+  "@allSetGo": {
+    "description": "Final onboarding button."
+  },
+  "meTitle": "Me",
+  "@meTitle": {
+    "description": "Me screen title."
+  },
+  "meEditProfile": "Edit profile",
+  "@meEditProfile": {
+    "description": "Opens the profile editor."
+  },
+  "meTraining": "Training",
+  "@meTraining": {
+    "description": "Settings section heading."
+  },
+  "meGymDays": "Gym days per week",
+  "@meGymDays": {
+    "description": "Weekly goal setting."
+  },
+  "meGymDaysHelp": "Applies from this week. Sunday is your rest day.",
+  "@meGymDaysHelp": {
+    "description": "Weekly goal sheet help."
+  },
+  "meReminder": "Daily reminder",
+  "@meReminder": {
+    "description": "Reminder setting."
+  },
+  "meReminderHelp": "A gentle note on Monday to Saturday if you haven't checked in yet. Off by default.",
+  "@meReminderHelp": {
+    "description": "Reminder setting help."
+  },
+  "meReminderTime": "Reminder time",
+  "@meReminderTime": {
+    "description": "Reminder time setting."
+  },
+  "meReminderDenied": "Notifications are off for Gymlicious. You can turn them on in system settings.",
+  "@meReminderDenied": {
+    "description": "Shown when notification permission is refused."
+  },
+  "reminderTitle": "Ready for today?",
+  "@reminderTitle": {
+    "description": "Daily reminder notification title."
+  },
+  "reminderBody": "Tap to check in or plan your workout.",
+  "@reminderBody": {
+    "description": "Daily reminder notification body."
+  },
+  "reminderChannel": "Daily reminder",
+  "@reminderChannel": {
+    "description": "Android notification channel name."
+  },
+  "trainExercises": "Exercises",
+  "@trainExercises": {
+    "description": "Train shortcut to the exercise library."
+  },
+  "trainPastWorkouts": "Past workouts",
+  "@trainPastWorkouts": {
+    "description": "Train shortcut to history."
+  },
+  "trainLastWorkout": "Last workout",
+  "@trainLastWorkout": {
+    "description": "Train section heading."
+  },
+  "quoteNew": "New quote",
+  "@quoteNew": {
+    "description": "Button under the quote that shows another one."
+  }
+}

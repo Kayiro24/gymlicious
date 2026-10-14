@@ -1,0 +1,7 @@
+# Copy to android/key.properties (git-ignored) to sign release builds locally.
+# Never commit the real file or the keystore. CI uses the same values from
+# GitHub secrets instead (see docs/releasing.md).
+storeFile=/absolute/path/to/upload-keystore.jks
+storePassword=change-me
+keyAlias=upload
+keyPassword=change-me

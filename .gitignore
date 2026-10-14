@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Flutter / Dart
+mobile/.dart_tool/
+mobile/build/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/coverage/
+mobile/**/failures/
+mobile/widgetbook/.dart_tool/
+mobile/widgetbook/build/
+*.iml
+.idea/
+
+# Secrets: signing keys, store credentials, environment files. Never commit
+# these; CI reads them from GitHub secrets (docs/releasing.md).
+key.properties
+*.jks
+*.keystore
+*.p12
+*.p8
+*.pem
+*.mobileprovision
+*.provisionprofile
+.env
+.env.*
+!.env.example
+**/google-services.json
+**/GoogleService-Info.plist
+service-account*.json
+play-store-credentials*.json
+fastlane/report.xml
+**/fastlane/*.json
+
+# Local tooling
+mobile/android/local.properties
+mobile/ios/Flutter/ephemeral/
+.vscode/*
+!.vscode/launch.json
+/backend/
+
+# OS
+.DS_Store
+Thumbs.db

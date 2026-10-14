@@ -1,0 +1,518 @@
+[
+  {
+    "id": "ex_bench_press",
+    "name": "Bench Press",
+    "muscleGroup": "chest",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_incline_bench_press",
+    "name": "Incline Bench Press",
+    "muscleGroup": "chest",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_decline_bench_press",
+    "name": "Decline Bench Press",
+    "muscleGroup": "chest",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_dumbbell_bench_press",
+    "name": "Dumbbell Bench Press",
+    "muscleGroup": "chest",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_incline_dumbbell_press",
+    "name": "Incline Dumbbell Press",
+    "muscleGroup": "chest",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_dumbbell_fly",
+    "name": "Dumbbell Fly",
+    "muscleGroup": "chest",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_cable_fly",
+    "name": "Cable Fly",
+    "muscleGroup": "chest",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex_machine_chest_press",
+    "name": "Machine Chest Press",
+    "muscleGroup": "chest",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex_pec_deck",
+    "name": "Pec Deck",
+    "muscleGroup": "chest",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex_push_up",
+    "name": "Push-Up",
+    "muscleGroup": "chest",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex_chest_dip",
+    "name": "Chest Dip",
+    "muscleGroup": "chest",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex_deadlift",
+    "name": "Deadlift",
+    "muscleGroup": "back",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_barbell_row",
+    "name": "Barbell Row",
+    "muscleGroup": "back",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_pendlay_row",
+    "name": "Pendlay Row",
+    "muscleGroup": "back",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_one_arm_dumbbell_row",
+    "name": "One-Arm Dumbbell Row",
+    "muscleGroup": "back",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_pull_up",
+    "name": "Pull-Up",
+    "muscleGroup": "back",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex_chin_up",
+    "name": "Chin-Up",
+    "muscleGroup": "back",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex_lat_pulldown",
+    "name": "Lat Pulldown",
+    "muscleGroup": "back",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex_seated_cable_row",
+    "name": "Seated Cable Row",
+    "muscleGroup": "back",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex_t_bar_row",
+    "name": "T-Bar Row",
+    "muscleGroup": "back",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_face_pull",
+    "name": "Face Pull",
+    "muscleGroup": "back",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex_straight_arm_pulldown",
+    "name": "Straight-Arm Pulldown",
+    "muscleGroup": "back",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex_machine_row",
+    "name": "Machine Row",
+    "muscleGroup": "back",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex_rack_pull",
+    "name": "Rack Pull",
+    "muscleGroup": "back",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_back_extension",
+    "name": "Back Extension",
+    "muscleGroup": "back",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex_dumbbell_shrug",
+    "name": "Dumbbell Shrug",
+    "muscleGroup": "back",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_overhead_press",
+    "name": "Overhead Press",
+    "muscleGroup": "shoulders",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_dumbbell_shoulder_press",
+    "name": "Dumbbell Shoulder Press",
+    "muscleGroup": "shoulders",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_arnold_press",
+    "name": "Arnold Press",
+    "muscleGroup": "shoulders",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_lateral_raise",
+    "name": "Lateral Raise",
+    "muscleGroup": "shoulders",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_cable_lateral_raise",
+    "name": "Cable Lateral Raise",
+    "muscleGroup": "shoulders",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex_front_raise",
+    "name": "Front Raise",
+    "muscleGroup": "shoulders",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_rear_delt_fly",
+    "name": "Rear Delt Fly",
+    "muscleGroup": "shoulders",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_reverse_pec_deck",
+    "name": "Reverse Pec Deck",
+    "muscleGroup": "shoulders",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex_upright_row",
+    "name": "Upright Row",
+    "muscleGroup": "shoulders",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_barbell_curl",
+    "name": "Barbell Curl",
+    "muscleGroup": "biceps",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_dumbbell_curl",
+    "name": "Dumbbell Curl",
+    "muscleGroup": "biceps",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_hammer_curl",
+    "name": "Hammer Curl",
+    "muscleGroup": "biceps",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_preacher_curl",
+    "name": "Preacher Curl",
+    "muscleGroup": "biceps",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_cable_curl",
+    "name": "Cable Curl",
+    "muscleGroup": "biceps",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex_incline_dumbbell_curl",
+    "name": "Incline Dumbbell Curl",
+    "muscleGroup": "biceps",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_concentration_curl",
+    "name": "Concentration Curl",
+    "muscleGroup": "biceps",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_close_grip_bench_press",
+    "name": "Close-Grip Bench Press",
+    "muscleGroup": "triceps",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_triceps_pushdown",
+    "name": "Triceps Pushdown",
+    "muscleGroup": "triceps",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex_rope_pushdown",
+    "name": "Rope Pushdown",
+    "muscleGroup": "triceps",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex_overhead_triceps_extension",
+    "name": "Overhead Triceps Extension",
+    "muscleGroup": "triceps",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex_skull_crusher",
+    "name": "Skull Crusher",
+    "muscleGroup": "triceps",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_dumbbell_triceps_extension",
+    "name": "Dumbbell Triceps Extension",
+    "muscleGroup": "triceps",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_triceps_dip",
+    "name": "Triceps Dip",
+    "muscleGroup": "triceps",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex_wrist_curl",
+    "name": "Wrist Curl",
+    "muscleGroup": "forearms",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_farmer_s_carry",
+    "name": "Farmer's Carry",
+    "muscleGroup": "forearms",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_back_squat",
+    "name": "Back Squat",
+    "muscleGroup": "quads",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_front_squat",
+    "name": "Front Squat",
+    "muscleGroup": "quads",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_leg_press",
+    "name": "Leg Press",
+    "muscleGroup": "quads",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex_hack_squat",
+    "name": "Hack Squat",
+    "muscleGroup": "quads",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex_leg_extension",
+    "name": "Leg Extension",
+    "muscleGroup": "quads",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex_bulgarian_split_squat",
+    "name": "Bulgarian Split Squat",
+    "muscleGroup": "quads",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_walking_lunge",
+    "name": "Walking Lunge",
+    "muscleGroup": "quads",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_goblet_squat",
+    "name": "Goblet Squat",
+    "muscleGroup": "quads",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_step_up",
+    "name": "Step-Up",
+    "muscleGroup": "quads",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_romanian_deadlift",
+    "name": "Romanian Deadlift",
+    "muscleGroup": "hamstrings",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_lying_leg_curl",
+    "name": "Lying Leg Curl",
+    "muscleGroup": "hamstrings",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex_seated_leg_curl",
+    "name": "Seated Leg Curl",
+    "muscleGroup": "hamstrings",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex_good_morning",
+    "name": "Good Morning",
+    "muscleGroup": "hamstrings",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_nordic_curl",
+    "name": "Nordic Curl",
+    "muscleGroup": "hamstrings",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex_dumbbell_stiff_leg_deadlift",
+    "name": "Dumbbell Stiff-Leg Deadlift",
+    "muscleGroup": "hamstrings",
+    "equipment": "dumbbell"
+  },
+  {
+    "id": "ex_hip_thrust",
+    "name": "Hip Thrust",
+    "muscleGroup": "glutes",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_glute_bridge",
+    "name": "Glute Bridge",
+    "muscleGroup": "glutes",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex_cable_kickback",
+    "name": "Cable Kickback",
+    "muscleGroup": "glutes",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex_hip_abduction",
+    "name": "Hip Abduction",
+    "muscleGroup": "glutes",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex_standing_calf_raise",
+    "name": "Standing Calf Raise",
+    "muscleGroup": "calves",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex_seated_calf_raise",
+    "name": "Seated Calf Raise",
+    "muscleGroup": "calves",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex_single_leg_calf_raise",
+    "name": "Single-Leg Calf Raise",
+    "muscleGroup": "calves",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex_plank",
+    "name": "Plank",
+    "muscleGroup": "core",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex_side_plank",
+    "name": "Side Plank",
+    "muscleGroup": "core",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex_hanging_leg_raise",
+    "name": "Hanging Leg Raise",
+    "muscleGroup": "core",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex_cable_crunch",
+    "name": "Cable Crunch",
+    "muscleGroup": "core",
+    "equipment": "cable"
+  },
+  {
+    "id": "ex_ab_wheel_rollout",
+    "name": "Ab Wheel Rollout",
+    "muscleGroup": "core",
+    "equipment": "other"
+  },
+  {
+    "id": "ex_russian_twist",
+    "name": "Russian Twist",
+    "muscleGroup": "core",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex_crunch",
+    "name": "Crunch",
+    "muscleGroup": "core",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex_kettlebell_swing",
+    "name": "Kettlebell Swing",
+    "muscleGroup": "fullBody",
+    "equipment": "kettlebell"
+  },
+  {
+    "id": "ex_power_clean",
+    "name": "Power Clean",
+    "muscleGroup": "fullBody",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_thruster",
+    "name": "Thruster",
+    "muscleGroup": "fullBody",
+    "equipment": "barbell"
+  },
+  {
+    "id": "ex_burpee",
+    "name": "Burpee",
+    "muscleGroup": "fullBody",
+    "equipment": "bodyweight"
+  },
+  {
+    "id": "ex_rowing_machine",
+    "name": "Rowing Machine",
+    "muscleGroup": "cardio",
+    "equipment": "machine"
+  },
+  {
+    "id": "ex_assault_bike",
+    "name": "Assault Bike",
+    "muscleGroup": "cardio",
+    "equipment": "machine"
+  }
+]

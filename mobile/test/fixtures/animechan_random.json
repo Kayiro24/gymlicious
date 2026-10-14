@@ -1,0 +1,8 @@
+{
+  "status": "success",
+  "data": {
+    "content": "If you don't take risks, you can't create a future.",
+    "anime": { "id": 188, "name": "One Piece", "altName": "One Piece" },
+    "character": { "id": 104, "name": "Monkey D. Luffy" }
+  }
+}

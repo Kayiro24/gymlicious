@@ -1,0 +1,17 @@
+name: Feature idea
+description: Suggest something that would make Gymlicious better
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+  - type: markdown
+    attributes:
+      value: Gymlicious stays private and offline-first, so features that need accounts, ads or sending data off the phone won't be added.

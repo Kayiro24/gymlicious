@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "mobile (dev)",
+            "cwd": "mobile",
+            "program": "lib/main.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": ["--flavor", "dev", "--dart-define-from-file=config/dev.json"]
+        },
+        {
+            "name": "mobile (staging, profile mode)",
+            "cwd": "mobile",
+            "program": "lib/main.dart",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "args": ["--flavor", "staging", "--dart-define-from-file=config/staging.json"]
+        },
+        {
+            "name": "mobile (prod, release mode)",
+            "cwd": "mobile",
+            "program": "lib/main.dart",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "args": ["--flavor", "prod", "--dart-define-from-file=config/prod.json"]
+        },
+        {
+            "name": "catalogue",
+            "cwd": "mobile",
+            "program": "catalogue/main.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": ["--flavor", "dev"]
+        }
+    ]
+}

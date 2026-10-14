@@ -1,0 +1,20 @@
+repos:
+  - repo: local
+    hooks:
+      - id: dart-format
+        name: dart format
+        entry: bash -c 'cd mobile && dart format --set-exit-if-changed lib test'
+        language: system
+        files: ^mobile/.*\.dart$
+        pass_filenames: false
+      - id: dart-analyze
+        name: dart analyze
+        entry: bash -c 'cd mobile && dart analyze --fatal-infos'
+        language: system
+        files: ^mobile/.*\.dart$
+        pass_filenames: false
+      - id: affected-tests
+        name: flutter test (affected features)
+        entry: bash tool/affected_tests.sh
+        language: system
+        files: ^mobile/(lib|test)/
